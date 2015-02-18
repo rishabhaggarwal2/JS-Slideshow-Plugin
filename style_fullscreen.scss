@@ -1,0 +1,77 @@
+body,html
+{
+	margin:0;
+	width: 100%;
+	margin:0;
+	padding: 0;
+	background:#111;
+	height: 100%;
+	overflow:hidden;
+}
+
+.page
+{
+	width:100%;
+	height: 90%;
+	margin: auto;
+	background:#111;
+	line-height: 768px;
+}
+.slideshow
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+
+    .slider
+    {
+    	width: 100%;
+    	height: 100%;
+    }
+
+	img
+	{
+		height: auto;
+		width: 100%;
+		vertical-align:bottom;
+        border:0;
+	}
+}
+
+	.thumb_container
+	{
+
+		height: 10%;
+		width: 100%;
+		position: relative;
+		bottom: 0;
+		overflow-x:hidden; 
+		overflow-y:hidden; 
+
+		.thumbs
+		{
+			position: relative;
+			top: 0;
+			height: 10%;
+			width: 300%;
+			transition:all 2s ease;
+			-webkit-transition:all 2s ease;
+			-moz-transition:all 2s ease;
+			-ms-transition:all 2s ease;
+
+			img
+			{
+				height: 100px;
+				display: inline;
+				position: relative;
+				top:0;
+				left:0;
+				opacity: 0.5;
+			}
+			img:hover
+			{
+				opacity: 1;
+			}
+		}
+	}
